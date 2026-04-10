@@ -1,0 +1,26 @@
+import GoldChevronStrip from "@/components/GoldChevronStrip";
+import HeroSection from "@/components/HeroSection";
+import MarqueeStrip from "@/components/MarqueeStrip";
+import BrandStatement from "@/components/BrandStatement";
+import ServicesSection from "@/components/ServicesSection";
+import StatsSection from "@/components/StatsSection";
+import WhyUsSection from "@/components/WhyUsSection";
+import PortfolioSection from "@/components/PortfolioSection";
+import CTASection from "@/components/CTASection";
+
+export default function HomePage() {
+  return (
+    <>
+      <GoldChevronStrip />
+      <HeroSection />
+      <GoldChevronStrip />
+      <MarqueeStrip />
+      <BrandStatement />
+      <ServicesSection />
+      <StatsSection />
+      <WhyUsSection />
+      <PortfolioSection />
+      <CTASection />
+    </>
+  );
+}
