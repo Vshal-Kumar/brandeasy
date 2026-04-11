@@ -51,16 +51,16 @@ export default function ServicesPage() {
     <div className="min-h-screen">
       <GoldChevronStrip />
       <div className="maroon-floral-bg py-14 md:py-20 text-center relative">
-        <div className="absolute top-0 left-0 right-0 h-0.5 bg-[#C8A855]/40" />
-        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#C8A855]/40" />
-        <p className="text-[#C8A855] text-xs tracking-[0.3em] uppercase font-medium mb-2">What We Offer</p>
+        <div className="absolute top-0 left-0 right-0 h-0.5 bg-[#2DB34A]/40" />
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#2DB34A]/40" />
+        <p className="text-[#2DB34A] text-xs tracking-[0.3em] uppercase font-medium mb-2">What We Offer</p>
         <h1 className="text-white font-serif text-4xl sm:text-5xl font-bold">
-          Our <span className="text-[#C8A855] italic">Services</span>
+          Our <span className="text-[#2DB34A] italic">Services</span>
         </h1>
         <div className="flex items-center justify-center gap-3 mt-4">
-          <div className="h-px w-12 bg-[#C8A855]/60" />
-          <span className="text-[#C8A855]">✦</span>
-          <div className="h-px w-12 bg-[#C8A855]/60" />
+          <div className="h-px w-12 bg-[#2DB34A]/60" />
+          <span className="text-[#2DB34A]">✦</span>
+          <div className="h-px w-12 bg-[#2DB34A]/60" />
         </div>
       </div>
       <GoldChevronStrip />
@@ -70,24 +70,24 @@ export default function ServicesPage() {
           {services.map((s, i) => (
             <div
               key={s.title}
-              className={`bg-white border border-[#C8A855]/30 p-8 md:p-10 flex flex-col md:flex-row gap-8 ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
+              className={`bg-white border border-[#0099D4]/25 p-8 md:p-10 flex flex-col md:flex-row gap-8 ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
             >
               <div className="md:w-1/3 flex flex-col items-center justify-center maroon-floral-bg rounded-sm p-8 text-center shrink-0">
                 <div className="text-5xl mb-3">{s.icon}</div>
                 <h2 className="text-white font-serif font-bold text-xl">{s.title}</h2>
               </div>
               <div className="flex-1">
-                <h3 className="text-[#2D1A0A] font-serif font-bold mb-3 text-2xl">{s.title}</h3>
-                <p className="text-[#5A3A2A] text-sm leading-relaxed mb-5">{s.desc}</p>
+                <h3 className="text-[#0A2733] font-serif font-bold mb-3 text-2xl">{s.title}</h3>
+                <p className="text-[#2A5566] text-sm leading-relaxed mb-5">{s.desc}</p>
                 <ul className="grid grid-cols-2 gap-y-2 gap-x-4">
                   {s.features.map((f) => (
-                    <li key={f} className="flex items-center gap-2 text-xs text-[#2D1A0A]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#7B1818] shrink-0" />
+                    <li key={f} className="flex items-center gap-2 text-xs text-[#0A2733]">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#2DB34A] shrink-0" />
                       {f}
                     </li>
                   ))}
                 </ul>
-                <Link href="/contact" className="inline-block mt-6 bg-[#7B1818] text-white px-7 py-2.5 text-xs tracking-widest uppercase font-bold hover:bg-[#5A0F0F] transition-colors">
+                <Link href="/contact" className="inline-block mt-6 bg-[#0099D4] text-white px-7 py-2.5 text-xs tracking-widest uppercase font-bold hover:bg-[#0077A8] transition-colors">
                   Get a Quote
                 </Link>
               </div>

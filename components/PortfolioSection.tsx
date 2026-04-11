@@ -1,26 +1,26 @@
 import Link from "next/link";
 
 const projects = [
-  { name: "Restaurant Facade Sign", type: "LED Channel Letters", location: "Mumbai", bg: "#8B2020", text: "#FFD700" },
-  { name: "Mall Directory Board", type: "Digital Signage", location: "Bangalore", bg: "#1A3A5C", text: "#C8E6FF" },
-  { name: "Salon Neon Sign", type: "Flex Neon", location: "Delhi", bg: "#2D0A3A", text: "#FF6EC7" },
-  { name: "Auto Showroom Branding", type: "Acrylic 3D Letters", location: "Chennai", bg: "#0A2D1A", text: "#6BFFAA" },
+  { name: "Restaurant Facade Sign", type: "LED Channel Letters", location: "Mumbai", bg: "#005A80", text: "#2DB34A" },
+  { name: "Mall Directory Board", type: "Digital Signage", location: "Bangalore", bg: "#0A2733", text: "#0099D4" },
+  { name: "Salon Neon Sign", type: "Flex Neon", location: "Delhi", bg: "#0077A8", text: "#E0F4FB" },
+  { name: "Auto Showroom Branding", type: "Acrylic 3D Letters", location: "Chennai", bg: "#155C25", text: "#2DB34A" },
 ];
 
 export default function PortfolioSection() {
   return (
-    <section className="bg-[#EDE5D0] py-16 md:py-20">
+    <section className="bg-[#E0F4FB] py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10 gap-4">
           <div>
-            <p className="text-[#7B1818] text-xs tracking-[0.3em] uppercase font-medium mb-2">Our Work</p>
-            <h2 className="text-[#2D1A0A] font-serif text-3xl sm:text-4xl font-bold leading-tight">
-              Featured <span className="text-[#7B1818] italic">Projects</span>
+            <p className="text-[#0099D4] text-xs tracking-[0.3em] uppercase font-medium mb-2">Our Work</p>
+            <h2 className="text-[#0A2733] font-serif text-3xl sm:text-4xl font-bold leading-tight">
+              Featured <span className="text-[#0077A8] italic">Projects</span>
             </h2>
           </div>
           <Link
             href="/services"
-            className="self-start md:self-auto border border-[#7B1818] text-[#7B1818] px-6 py-2 text-xs tracking-widest uppercase font-bold hover:bg-[#7B1818] hover:text-white transition-all"
+            className="self-start md:self-auto border border-[#0099D4] text-[#0099D4] px-6 py-2 text-xs tracking-widest uppercase font-bold hover:bg-[#0099D4] hover:text-white transition-all"
           >
             View All Work
           </Link>

@@ -18,16 +18,16 @@ export default function ContactPage() {
     <div className="min-h-screen">
       <GoldChevronStrip />
       <div className="maroon-floral-bg py-14 md:py-20 text-center relative">
-        <div className="absolute top-0 left-0 right-0 h-0.5 bg-[#C8A855]/40" />
-        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#C8A855]/40" />
-        <p className="text-[#C8A855] text-xs tracking-[0.3em] uppercase font-medium mb-2">Reach Out</p>
+        <div className="absolute top-0 left-0 right-0 h-0.5 bg-[#2DB34A]/40" />
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#2DB34A]/40" />
+        <p className="text-[#2DB34A] text-xs tracking-[0.3em] uppercase font-medium mb-2">Reach Out</p>
         <h1 className="text-white font-serif text-4xl sm:text-5xl font-bold">
-          Contact <span className="text-[#C8A855] italic">Us</span>
+          Contact <span className="text-[#2DB34A] italic">Us</span>
         </h1>
         <div className="flex items-center justify-center gap-3 mt-4">
-          <div className="h-px w-12 bg-[#C8A855]/60" />
-          <span className="text-[#C8A855]">✦</span>
-          <div className="h-px w-12 bg-[#C8A855]/60" />
+          <div className="h-px w-12 bg-[#2DB34A]/60" />
+          <span className="text-[#2DB34A]">✦</span>
+          <div className="h-px w-12 bg-[#2DB34A]/60" />
         </div>
       </div>
       <GoldChevronStrip />
@@ -35,13 +35,13 @@ export default function ContactPage() {
       <section className="floral-bg py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Form */}
-          <div className="bg-white border border-[#C8A855]/30 p-8 md:p-10">
-            <h2 className="text-[#2D1A0A] font-serif text-2xl font-bold mb-6">Get a Free Quote</h2>
+          <div className="bg-white border border-[#0099D4]/25 p-8 md:p-10">
+            <h2 className="text-[#0A2733] font-serif text-2xl font-bold mb-6">Get a Free Quote</h2>
             {submitted ? (
               <div className="text-center py-12">
                 <div className="text-4xl mb-4">✅</div>
-                <h3 className="text-[#2D1A0A] font-semibold mb-2">Thank you!</h3>
-                <p className="text-[#5A3A2A] text-sm">We&apos;ll get back to you within 24 hours.</p>
+                <h3 className="text-[#0A2733] font-semibold mb-2">Thank you!</h3>
+                <p className="text-[#2A5566] text-sm">We&apos;ll get back to you within 24 hours.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -51,23 +51,23 @@ export default function ContactPage() {
                   { id: "email", label: "Email Address", type: "email", placeholder: "your@email.com" },
                 ].map((f) => (
                   <div key={f.id}>
-                    <label className="text-[#2D1A0A] text-xs font-semibold uppercase tracking-wider block mb-1.5">{f.label}</label>
+                    <label className="text-[#0A2733] text-xs font-semibold uppercase tracking-wider block mb-1.5">{f.label}</label>
                     <input
                       type={f.type}
                       placeholder={f.placeholder}
                       value={form[f.id as keyof typeof form]}
                       onChange={(e) => setForm({ ...form, [f.id]: e.target.value })}
-                      className="w-full border border-[#C8A855]/40 focus:border-[#7B1818] outline-none px-4 py-2.5 text-sm bg-[#F7F1E5] text-[#2D1A0A] placeholder-[#A08060]"
+                      className="w-full border border-[#0099D4]/30 focus:border-[#0099D4] outline-none px-4 py-2.5 text-sm bg-[#F3FAFD] text-[#0A2733] placeholder-[#6B9BB0]"
                       required={f.id === "name" || f.id === "phone"}
                     />
                   </div>
                 ))}
                 <div>
-                  <label className="text-[#2D1A0A] text-xs font-semibold uppercase tracking-wider block mb-1.5">Service Needed</label>
+                  <label className="text-[#0A2733] text-xs font-semibold uppercase tracking-wider block mb-1.5">Service Needed</label>
                   <select
                     value={form.service}
                     onChange={(e) => setForm({ ...form, service: e.target.value })}
-                    className="w-full border border-[#C8A855]/40 focus:border-[#7B1818] outline-none px-4 py-2.5 text-sm bg-[#F7F1E5] text-[#2D1A0A]"
+                    className="w-full border border-[#0099D4]/30 focus:border-[#0099D4] outline-none px-4 py-2.5 text-sm bg-[#F3FAFD] text-[#0A2733]"
                   >
                     <option value="">Select a service</option>
                     <option>LED Sign Boards</option>
@@ -79,18 +79,18 @@ export default function ContactPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="text-[#2D1A0A] text-xs font-semibold uppercase tracking-wider block mb-1.5">Message</label>
+                  <label className="text-[#0A2733] text-xs font-semibold uppercase tracking-wider block mb-1.5">Message</label>
                   <textarea
                     rows={4}
                     placeholder="Tell us about your signage requirements..."
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    className="w-full border border-[#C8A855]/40 focus:border-[#7B1818] outline-none px-4 py-2.5 text-sm bg-[#F7F1E5] text-[#2D1A0A] placeholder-[#A08060] resize-none"
+                    className="w-full border border-[#0099D4]/30 focus:border-[#0099D4] outline-none px-4 py-2.5 text-sm bg-[#F3FAFD] text-[#0A2733] placeholder-[#6B9BB0] resize-none"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-[#7B1818] text-white py-3 text-xs tracking-widest uppercase font-bold hover:bg-[#5A0F0F] transition-colors"
+                  className="w-full bg-[#0099D4] text-white py-3 text-xs tracking-widest uppercase font-bold hover:bg-[#0077A8] transition-colors"
                 >
                   Send Enquiry
                 </button>
@@ -101,33 +101,33 @@ export default function ContactPage() {
           {/* Info */}
           <div className="space-y-6">
             <div className="maroon-floral-bg p-8 text-white">
-              <h3 className="text-[#C8A855] font-serif text-2xl font-bold mb-5">Get In Touch</h3>
+              <h3 className="text-[#2DB34A] font-serif text-2xl font-bold mb-5">Get In Touch</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-4 text-sm text-white/80">
-                  <MapPin size={16} className="text-[#C8A855] shrink-0 mt-0.5" />
+                  <MapPin size={16} className="text-[#2DB34A] shrink-0 mt-0.5" />
                   <span>12, Industrial Estate, Phase 2,<br />Kalaburagi, Karnataka 585102</span>
                 </li>
                 <li className="flex items-center gap-4 text-sm text-white/80">
-                  <Phone size={16} className="text-[#C8A855] shrink-0" />
-                  <a href="tel:+919876543210" className="hover:text-[#C8A855] transition-colors">+91 98765 43210</a>
+                  <Phone size={16} className="text-[#2DB34A] shrink-0" />
+                  <a href="tel:+919876543210" className="hover:text-[#2DB34A] transition-colors">+91 98765 43210</a>
                 </li>
                 <li className="flex items-center gap-4 text-sm text-white/80">
-                  <Mail size={16} className="text-[#C8A855] shrink-0" />
-                  <a href="mailto:hello@brandeasy.in" className="hover:text-[#C8A855] transition-colors">hello@brandeasy.in</a>
+                  <Mail size={16} className="text-[#2DB34A] shrink-0" />
+                  <a href="mailto:hello@brandeasy.in" className="hover:text-[#2DB34A] transition-colors">hello@brandeasy.in</a>
                 </li>
                 <li className="flex items-center gap-4 text-sm text-white/80">
-                  <Clock size={16} className="text-[#C8A855] shrink-0" />
+                  <Clock size={16} className="text-[#2DB34A] shrink-0" />
                   <span>Mon – Sat: 9:00 AM – 7:00 PM</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-white border border-[#C8A855]/30 p-6">
-              <h4 className="text-[#2D1A0A] font-semibold text-sm mb-3">Why Choose Brand Easy?</h4>
+            <div className="bg-white border border-[#0099D4]/25 p-6">
+              <h4 className="text-[#0A2733] font-semibold text-sm mb-3">Why Choose Brand Easy?</h4>
               <ul className="space-y-2">
                 {["Free site visit & consultation", "Design mockup within 24 hours", "Transparent pricing — no hidden costs", "Pan-India installation network", "5-year warranty on all LED products"].map((p) => (
-                  <li key={p} className="flex items-center gap-2 text-xs text-[#5A3A2A]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#C8A855] shrink-0" />
+                  <li key={p} className="flex items-center gap-2 text-xs text-[#2A5566]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#2DB34A] shrink-0" />
                     {p}
                   </li>
                 ))}

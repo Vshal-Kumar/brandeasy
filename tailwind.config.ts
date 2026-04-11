@@ -9,11 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        maroon: "#7B1818",
-        "maroon-dark": "#5A0F0F",
-        gold: "#C8A855",
-        "gold-dark": "#A8882F",
-        cream: "#F7F1E5",
+        blue:          "#0099D4",
+        "blue-dark":   "#0077A8",
+        "blue-deeper": "#005A80",
+        "blue-light":  "#E0F4FB",
+        green:         "#2DB34A",
+        "green-dark":  "#1F8A37",
+        "green-deeper":"#155C25",
+        "green-light": "#E4F7E9",
+        "off-white":   "#F3FAFD",
+        "text-dark":   "#0A2733",
+        "text-mid":    "#2A5566",
       },
       fontFamily: {
         serif: ['"Playfair Display"', "Georgia", "serif"],

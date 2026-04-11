@@ -1,6 +1,6 @@
 export default function GoldChevronStrip() {
   return (
-    <div className="w-full overflow-hidden" style={{ height: "18px", background: "#C8A855" }}>
+    <div className="w-full overflow-hidden" style={{ height: "18px", background: "#2DB34A" }}>
       <div className="flex items-center h-full select-none">
         {Array.from({ length: 80 }).map((_, i) => (
           <svg key={i} viewBox="0 0 20 18" height="18" width="20" fill="none" xmlns="http://www.w3.org/2000/svg">

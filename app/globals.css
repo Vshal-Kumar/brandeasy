@@ -5,14 +5,18 @@
 @tailwind utilities;
 
 :root {
-  --maroon: #7B1818;
-  --maroon-dark: #5A0F0F;
-  --gold: #C8A855;
-  --gold-dark: #A8882F;
-  --cream: #F7F1E5;
-  --cream-dark: #EDE5D0;
-  --text-dark: #2D1A0A;
-  --text-mid: #5A3A2A;
+  --blue:        #0099D4;
+  --blue-dark:   #0077A8;
+  --blue-deeper: #005A80;
+  --blue-light:  #E0F4FB;
+  --green:       #2DB34A;
+  --green-dark:  #1F8A37;
+  --green-deeper:#155C25;
+  --green-light: #E4F7E9;
+  --white:       #FFFFFF;
+  --off-white:   #F3FAFD;
+  --text-dark:   #0A2733;
+  --text-mid:    #2A5566;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -20,22 +24,22 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background-color: var(--cream);
+  background-color: var(--off-white);
   color: var(--text-dark);
   font-family: 'Lato', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Cream with subtle floral pattern */
+/* Light blue-tinted background with subtle crosshatch pattern */
 .floral-bg {
-  background-color: #F7F1E5;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23C8A855' fill-opacity='0.09'%3E%3Cpath d='M40 5 C38 10 35 15 40 20 C45 15 42 10 40 5Z'/%3E%3Cpath d='M40 35 C38 30 35 25 40 20 C45 25 42 30 40 35Z'/%3E%3Cpath d='M5 40 C10 38 15 35 20 40 C15 45 10 42 5 40Z'/%3E%3Cpath d='M35 40 C30 38 25 35 20 40 C25 45 30 42 35 40Z'/%3E%3Cpath d='M40 5 C42 10 45 15 40 20 C35 15 38 10 40 5Z'/%3E%3Cpath d='M40 35 C42 30 45 25 40 20 C35 25 38 30 40 35Z'/%3E%3Cpath d='M75 40 C70 38 65 35 60 40 C65 45 70 42 75 40Z'/%3E%3Cpath d='M45 40 C50 38 55 35 60 40 C55 45 50 42 45 40Z'/%3E%3Ccircle cx='40' cy='40' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #F3FAFD;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%230099D4' fill-opacity='0.055'%3E%3Crect x='36' y='4' width='8' height='32' rx='4'/%3E%3Crect x='36' y='44' width='8' height='32' rx='4'/%3E%3Crect x='4' y='36' width='32' height='8' rx='4'/%3E%3Crect x='44' y='36' width='32' height='8' rx='4'/%3E%3Ccircle cx='40' cy='40' r='6'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-/* Dark maroon with floral pattern */
+/* Deep blue background with green-tinted subtle pattern */
 .maroon-floral-bg {
-  background-color: #7B1818;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23C8A855' fill-opacity='0.07'%3E%3Cpath d='M40 5 C38 10 35 15 40 20 C45 15 42 10 40 5Z'/%3E%3Cpath d='M40 35 C38 30 35 25 40 20 C45 25 42 30 40 35Z'/%3E%3Cpath d='M5 40 C10 38 15 35 20 40 C15 45 10 42 5 40Z'/%3E%3Cpath d='M35 40 C30 38 25 35 20 40 C25 45 30 42 35 40Z'/%3E%3Cpath d='M40 5 C42 10 45 15 40 20 C35 15 38 10 40 5Z'/%3E%3Cpath d='M40 35 C42 30 45 25 40 20 C35 25 38 30 40 35Z'/%3E%3Cpath d='M75 40 C70 38 65 35 60 40 C65 45 70 42 75 40Z'/%3E%3Cpath d='M45 40 C50 38 55 35 60 40 C55 45 50 42 45 40Z'/%3E%3Ccircle cx='40' cy='40' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #0077A8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%232DB34A' fill-opacity='0.08'%3E%3Crect x='36' y='4' width='8' height='32' rx='4'/%3E%3Crect x='36' y='44' width='8' height='32' rx='4'/%3E%3Crect x='4' y='36' width='32' height='8' rx='4'/%3E%3Crect x='44' y='36' width='32' height='8' rx='4'/%3E%3Ccircle cx='40' cy='40' r='6'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Marquee animation */
@@ -51,6 +55,6 @@ body {
 }
 
 ::-webkit-scrollbar        { width: 5px; }
-::-webkit-scrollbar-track  { background: var(--cream); }
-::-webkit-scrollbar-thumb  { background: var(--maroon); border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+::-webkit-scrollbar-track  { background: var(--off-white); }
+::-webkit-scrollbar-thumb  { background: var(--blue); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--green); }
